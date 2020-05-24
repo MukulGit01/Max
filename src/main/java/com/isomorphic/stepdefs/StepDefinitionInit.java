@@ -38,6 +38,7 @@ public class StepDefinitionInit {
 			session.driver.get(url);
 
 		}
+		
 
 		for (Entry<String, Object> entry : session.config.entrySet()) {
 			System.out.println(" ********  " + entry.getKey() + " " + entry.getValue());
