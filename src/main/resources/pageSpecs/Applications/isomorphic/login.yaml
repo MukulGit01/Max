@@ -1,0 +1,35 @@
+timeout: 20
+
+expectedTitle: ISOMORPHIC
+
+elements:
+    userName: 
+        findBy: css
+        locator: input[placeholder="Email"]
+    password: 
+        findBy: css
+        locator: input[placeholder="Password"]
+    siginButton: 
+        findBy: css
+        locator: [type="submit"]
+    homePage: 
+        findBy: css
+        locator: li[class="isoUserEmail"]  
+    ClickLocation: 
+        findBy: xpath
+        locator: //h3[contains(text(),'Australia')]
+    MemberLogin:
+        findBy: xpath
+        locator: //a[@class='text-white']
+    CLickUserName:
+        findBy: xpath
+        locator: //form[@id='form1']//input[@id='username'] 
+    EnterPassword:
+        findBy: css
+        locator: input[placeholder="Password..."]   
+    ClickLogin:
+        find By: css
+        locator: button[class='btn btn-info btn-block']
+
+     
+        
