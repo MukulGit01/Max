@@ -46,6 +46,14 @@ public class LoginStepDefinition extends StepDefinitionInit {
     	System.out.println("Click on the Password");
     	loginPO.EnterPassword(strArg1);
     }
+    
+    
+    @And("^Click on the Login button and error message should reflect$")
+    public void click_on_the_login_button_and_error_message_should_reflect() throws Throwable {
+    
+    
+    }
+    
 
 }
 
