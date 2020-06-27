@@ -18,7 +18,7 @@ import cucumber.api.junit.Cucumber;
 
 				 glue = {"com.isomorphic.stepdefs"},
 				 
-						 tags= {"@sigin"},
+						 tags= {"@sigin, @Login"},
 						 
 						 monochrome=true
                          
