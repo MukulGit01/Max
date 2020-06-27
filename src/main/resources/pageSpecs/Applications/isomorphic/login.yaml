@@ -28,7 +28,7 @@ elements:
         findBy: css
         locator: input[placeholder="Password..."]   
     ClickLogin:
-        find By: css
+        findBy: css
         locator: button[class='btn btn-info btn-block']
 
      

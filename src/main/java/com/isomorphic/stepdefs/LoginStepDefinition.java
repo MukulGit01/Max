@@ -1,6 +1,5 @@
 package com.isomorphic.stepdefs;
 
-
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -19,8 +18,7 @@ public class LoginStepDefinition extends StepDefinitionInit {
     @When("^Select the language and location on the welcome page$")
     public void select_the_language_and_location_on_the_welcome_page() throws Throwable {
     	System.out.println("Click on the Australia");
-    	loginPO.clickAustralia();
-    	
+    	loginPO.clickAustralia(); 	
 
     }
 
@@ -46,6 +44,28 @@ public class LoginStepDefinition extends StepDefinitionInit {
     	System.out.println("Click on the Password");
     	loginPO.EnterPassword(strArg1);
     }
+    
+    
+    @And("^Click on the Login button and error message should reflect$")
+    public void click_on_the_login_button_and_error_message_should_reflect() throws Throwable {
+    System.out.println("Click on the Login with Invalid crdentials");
+    loginPO.CliclkOnLogin();
+    }
+    
+    @And("^Navigate to Home page$")
+    public void navigate_to_home_page() throws Throwable {
+    System.out.println("Navigate to Home Page");
+    session.driver.navigate().back();
+    session.driver.navigate().back();
+    }
+    
+    @And("^Cursor Move to the Products and display all products$")
+    public void cursor_move_to_the_products() throws Throwable {
+       System.out.println("Cursor move to the Products");
+       loginPO.CursorMoveProducts();
+       
+    }
+    
 
 }
 
